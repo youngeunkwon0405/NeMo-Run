@@ -10,7 +10,7 @@ git init
 git remote add origin https://github.com/NVIDIA/NeMo-Aligner.git
 git fetch --all
 git fetch origin '+refs/pull/*/merge:refs/remotes/pull/*/merge'
-git checkout $CURATOR_COMMIT
+git checkout $NEMO_RUN_COMMIT
 EOF
 
 FROM python:3.12
