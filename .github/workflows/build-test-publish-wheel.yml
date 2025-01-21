@@ -30,8 +30,8 @@ jobs:
     uses: NVIDIA/NeMo-FW-CI-templates/.github/workflows/_build_test_publish_wheel.yml@ko3n1g/ci/build-wheel-public-infra
     with:
       dry-run: true
-      python-package-path: src/nemo_run
-      python-package-import: src.nemo_run
+      python-package: nemo_run
+      base_dir: src
       environment: public
     secrets:
       TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
